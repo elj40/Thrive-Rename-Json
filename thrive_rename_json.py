@@ -19,18 +19,18 @@ def convertJson(indent, baseDict, newDict):
 print(sys.argv[1])
 
 PATH_TO_FILE = sys.argv[1] + "\\" + sys.argv[2]
-FILE = open(PATH_TO_FILE)
+FILE = open(PATH_TO_FILE, "r+")
 DATA = FILE.read()
+JSON_DATA = json.loads(DATA)
 
-#data = open(r'C:\Users\elaij\OneDrive\Documents\Programming\Python\programs\Thrive\test_data.json', "r").read()
-jsonData = json.loads(DATA)
 jsonConverted = {}
 
 
-convertedDataFile = open(r'C:\Users\elaij\OneDrive\Documents\Programming\Python\programs\Thrive\converted.json', "w")
+convertJson(0, JSON_DATA, jsonConverted)
 
-convertJson(0, jsonData, jsonConverted)
 
 jsonConvertedText = json.dumps(jsonConverted, indent=4)
-convertedDataFile.write(jsonConvertedText)
-print(jsonConverted)
+print(jsonConvertedText)
+FILE.write(jsonConvertedText)
+FILE.close()
+print("JSON Converted")
