@@ -3,9 +3,8 @@ A short python script to convert camelCase to PascalCase from the second layer o
 
 **Details**
 
-First layer is avoided
-
-Any single-letter variable names are avoided
+- First layer is avoided
+- Any single-letter variable names are avoided
 
 **Issues**
 
