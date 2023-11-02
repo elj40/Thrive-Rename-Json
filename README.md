@@ -1,18 +1,14 @@
 # Thrive-Rename-Json
-A short python script to convert camelCase to PascalCase from the second layer onwards of a JSON file.
 
-**Details**
+Thrive-Rename-Json is a tool designed to format the JSON files in the open-source project "Thrive" by Revolutionary Games. It specifically focuses on capitalizing the first letter in property names, converting camelCase to PascalCase, while avoiding variables that might break the current codebase. This project is released under the Apache License.
 
-- First layer is avoided
-- Any single-letter variable names are avoided
+## Installation
 
-**Issues**
+To use Thrive-Rename-Json, follow these installation steps:
 
-Unable to loop through arrays in the JSON
+1. Clone the repository:
 
-**Instructions**
-
-1. Navigate to file in terminal
-2. Run ```py/python/python3 thrive_rename_json.py [folder_name] [file_to_update]```
-
-*Will work as long as folder_name+file_name leads to file
+   ```bash
+   git clone https://github.com/yourusername/Thrive-Rename-Json.git
+   cd Thrive-Rename-Json
+   ```
